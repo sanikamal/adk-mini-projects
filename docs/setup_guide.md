@@ -258,7 +258,7 @@ Let's connect what you just built to the concepts.
 Remember: Agent = model + tools + orchestration.
 
 *   **Model (configured in step 7)**: Your `.env` file configures access to Gemini. Gemini is the LLM that provides reasoning and decision-making. This is the “brain” that understands language and makes choices.
-*   **Tools (coming in module 3)**: Functions your agent can call to take actions. Examples: search the web, read files, and send emails. These bridge “knowing” to “doing”.
+*   **Tools**: Functions your agent can call to take actions. Examples: search the web, read files, and send emails. These bridge “knowing” to “doing”.
 *   **Orchestration (provided by ADK)**: The framework that runs the agent loop. Manages: Perceive → think → act → check → repeat. You installed this in step 4 (`pip install google-adk`).
 
 ### How the files work together
@@ -271,7 +271,7 @@ root_agent = Agent(
     name='root_agent',               # Identity: Required identifier
     description='A helpful agent.',  # Purpose: What this agent does
     instruction='You are helpful.'   # Behavior: How to act
-    # Tools: You'll add these in Module 3
+    # Tools: You'll add these
     # Orchestration: Handled automatically by the Agent class
 )
 ```
